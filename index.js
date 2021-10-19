@@ -12,6 +12,9 @@ app.get("/api/Alaska", (req, res) => {
   const response = ["LETSSSSS GOOOOO!",
     "Congratulations!",
     "Good luck!",
+    "Can I please be you",
+    "You're going to have so much fun",
+    "Yayyyyyyy!!!"
   ];
 
   // choose random compliment
