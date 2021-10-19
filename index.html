@@ -3,10 +3,14 @@
 
 <head>
   <title>Back End Assessment</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 
+<h1 style="color: black; text-align: center;">Alaskan Salmon Fishing</h1>
+
 <body class="container">
-  <button id="Alaska">Click here if you are going to fish alaska!</button>
+  
+    <button id="Alaska">Click here if you are going to fish alaska!</button>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
@@ -19,17 +23,38 @@
     };
   </script>
 
-  <button type="button" onclick="alert('June and July')">King Salmon</button>
-  <button type="button" onclick="alert('June, July, August')">Chum Salmon</button>
-  <button type="button" onclick="alert('July')">Sockeye Salmon</button>
-  <button type="button" onclick="alert('August and september')">Silver Salmon</button>
-  <button type="button" onclick="alert('July and August')">Pink Salmon</button>
+  
 
-  <h2>King Salmon</h2>
+  <h2 style="color: black; text-align: center; border-style: solid;">King Salmon</h2>
+  <button type="button" onclick="alert('June and July')">Months</button>
+  <img src="https://www.drifterslodge.com/wp-content/uploads/2018/08/shutterstock_111742583-e1535648028262.jpg" alt="king salmon" class="center" width="500" height="">
+  <p>Like most members of the Salmonidae family, this fish changes its appearance drastically while spawning. In their oceanic form, this species has silver colored scales with hints of blue-green. It also has a unique black coloration around its mouth. While spawning, their scales darken and take on a reddish hue, and their mouths grow elongated and hooked.
+    This species is the largest in Oncorhynchus. Large individuals sometimes reach 100 lbs. in weight, and many grow to a length 5 ft. or greater.</p>
+ 
   <h3>Chum Salmon</h3>
+  <button type="button" onclick="alert('June, July, August')">Months</button>
+  <img src="http://www.kingsailfishmounts.com/27_inch_Chum_Salmon-p-1079.jpg" alt="Chum salmon" class="center" width="500" height="">
+  <p2>Chum salmon are an anadromous fish species that spend their adult lives in the ocean and migrate from their marine environment back to their fresh water natal streams to spawn or reproduce. Chum salmon are semelparous and spawn only once and then die. This salmon species is best known for the large canine spawning teeth exhibited by the males of the species on the spawning runs to their natal streams. They are second only in size to their Pacific salmon cousins, the chinook salmon.
+    During the ocean phase of their life history, chum salmon look remarkably similar to both coho salmon and sockeye salmon during this phase. But when chum salmon enter fresh water they undergo a dramatic morphological change and both sexes develop a pattern of bold red and black tiger stripes. Young chum salmon form schools while in freshwater and remain close to shore to help guard against predation.</p2>
+  
   <h4>Sockeye Salmon</h4>
+  <button type="button" onclick="alert('July')">Months</button>
+    <img src="http://wildsalmoncenter.org/wp-content/uploads/2020/02/kspencer_sockeye.jpg" alt="Sockeye salmon" class="center" width="500" height="">
+    <p3>Sockeye salmon are one of the smaller species of Pacific salmon, measuring 18 to 31inches in length and weighing 4-15 pounds. Sea-going sockeye salmon have iridescent silver flanks, a white belly, and a metallic green-blue top, giving them their "blueback" name. Some fine black speckling may occur on the back, but large spots are absent. Sockeye salmon are prized for their firm, bright-orange flesh.
+    As sockeye salmon return upriver to their spawning grounds, their bodies turn brilliant red and their heads take on a greenish color, hence their other common name, “red” salmon. Breeding-age males develop a humped back and hooked jaws filled with tiny, visible teeth. Juveniles, while in fresh water, have dark, oval parr marks on their sides. These parr marks are short-less than the diameter of the eye-and rarely extend below the lateral line.</p3>
+
   <h5>Silver Salmon</h5>
+  <button type="button" onclick="alert('August and september')">Months</button>
+  <img src="https://img.pngio.com/pink-salmon-animals-aquatic-fish-s-salmon-pinksalmonpnghtml-pink-salmon-png-700_266.png" alt="Pink Salmon" class="center" width="500" height="">
+  <p4>Adults usually weigh 8 to 12 pounds and are 24 to 30 inches long, but individuals weighing 31 pounds have been landed. Adults in salt water or newly returning to fresh water are bright silver with small black spots on the back and on the upper lobe of the tail fin. They can be distinguished from Chinook salmon by the lack of black spots on the lower lobe of the tail and by their white gums; Chinook have small black spots on both tail fin lobes and they have black gums. Spawning adults of both sexes have dark backs and heads with maroon to reddish sides.</p4>
+
+
   <h6>Pink Salmon</h6>
+  <button type="button" onclick="alert('July and August')">Months</button>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Oncorhynchus_keta.jpeg" alt="Silver salmon" class="center" width="500" height="">
+  <p5>Pink salmon are the smallest of the Pacific salmon found in North America weighing on average between 3.5 and 5 pounds, with an average length of 20-25 inches. As with all members of the salmon family, pink salmon are coldwater fish. They are also the most numerous Pacific salmon and have been harvested and canned commercially in Alaska since the late 1800’s. Young pink salmon are completely silver without any dark vertical bars or spots. In the ocean, adults are bright greenish-blue on top and silvery on its sides. They have very small scales and pink flesh. As adults get closer to returning to fresh water, they develop a lot of large black spots on their back and all over their tail. When pinks approach their spawning streams, males turn brown to black on their back with a bright white belly. Females have a bright white belly but turn an olive green with dusky bars or patches that can be lavender or a dark gold. By the time males enter the stream where they will spawn, they have developed a very large hump, and hooked jaws called a kype.</p5>
+
+
 
 
   <h1>What type of Salmon are you trying to catch?</h1>
@@ -59,6 +84,7 @@
 
         addForm.addEventListener('submit', submitHandler)
     </script>
+
 
 
 </body>
