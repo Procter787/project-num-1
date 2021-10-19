@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Back End Assessment</title>
+</head>
+
+<body class="container">
+  <button id="Alaska">Click here if you are going to fish alaska!</button>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    document.getElementById("Alaska").onclick = function () {
+      axios.get("http://localhost:4000/api/Alaska/")
+        .then(function (response) {
+          const data = response.data;
+          alert(data);
+        });
+    };
+  </script>
+
+  <button type="button" onclick="alert('June and July')">King Salmon</button>
+  <button type="button" onclick="alert('June, July, August')">Chum Salmon</button>
+  <button type="button" onclick="alert('July')">Sockeye Salmon</button>
+  <button type="button" onclick="alert('August and september')">Silver Salmon</button>
+  <button type="button" onclick="alert('July and August')">Pink Salmon</button>
+
+  <h2>King Salmon</h2>
+  <h3>Chum Salmon</h3>
+  <h4>Sockeye Salmon</h4>
+  <h5>Silver Salmon</h5>
+  <h6>Pink Salmon</h6>
+
+
+  <h1>What type of Salmon are you trying to catch?</h1>
+    <form>
+        <input type="text" placeholder="Type name here"/>
+        <button>Enter</button>
+    </form>
+    <section></section>
+    <script>
+        const addForm = document.querySelector('form')
+        const nameInput = document.querySelector('input')
+        const container = document.querySelector('section')
+
+        function submitHandler(e){
+            e.preventDefault()
+            axios.post('http://localhost:4000/api/salmon', {name: nameInput.value, })
+                .then(res => {
+                    container.innerHTML = ''
+                    nameInput.value = ''
+                        alert(res.data)
+                })
+                .catch(err => {
+                    alert('error: ' + err)
+                   
+                })
+        }
+
+        addForm.addEventListener('submit', submitHandler)
+    </script>
+
+
+</body>
+
+</html>
