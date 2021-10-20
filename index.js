@@ -3,6 +3,10 @@ const cors = require("cors");
 
 const app = express();
 
+app.get('/',function(req,res) {
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
+
 
 app.use(cors());
 
