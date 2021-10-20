@@ -3,14 +3,14 @@ const cors = require("cors");
 const path = require("path")
 const app = express();
 
-app.get('/',function(req,res) {
-  res.sendFile(path.join(__dirname, '/index.html'));
-});
-
 
 app.use(cors());
 
 app.use(express.json()); // When we want to be able to accept JSON.
+
+app.get('/',function(req,res) {
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
 
 app.get("/api/Alaska", (req, res) => {
   const response = ["LETSSSSS GOOOOO!",
@@ -52,5 +52,6 @@ app.post('/api/salmon', (req, res) => {
   res.status(200).send(result)
 })
 
+const port = process.env.PORT || 4000
 
-app.listen(4000, () => console.log("Server running on 4000"));
+app.listen(port, () => console.log("Server running on 4000"));
